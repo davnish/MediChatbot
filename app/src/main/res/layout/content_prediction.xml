@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:background="#007AA5"
+    tools:context="com.example.beast.weka.PredictionActivity"
+    tools:showIn="@layout/activity_prediction">
+
+    <TextView
+        android:id="@+id/predictionText"
+        android:layout_width="343dp"
+        android:layout_height="196dp"
+        android:layout_margin="@dimen/text_margin" />
+
+    <Button
+        android:id="@+id/buttonPredict"
+        android:layout_width="115dp"
+        android:layout_height="52dp"
+        android:layout_alignEnd="@+id/predictionText"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="238dp"
+        android:text="@string/predict_model" />
+
+    <Button
+        android:id="@+id/buttonLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/predictionText"
+        android:layout_alignBottom="@+id/buttonPredict"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="3dp"
+        android:text="@string/load_model" />
+
+</RelativeLayout>
